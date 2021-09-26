@@ -16,6 +16,7 @@ create table ControlPacientes_InformacionGeneral_Pacientes(
 	,Nombres varchar(max)
 	,NumeroSeguridadSocial varchar(max)
 	,Consultorio varchar(max)
+	,ControlPacientes_InformacionGeneral_Rubro_Id int
 	,EsActivo bit
 	,RegistroGenerado_TimeStamp datetime
 	,RegistroGenerado_UsuarioId nvarchar(128)
@@ -24,6 +25,14 @@ create table ControlPacientes_InformacionGeneral_Pacientes(
 create table ControlPacientes_InformacionGeneral_Estatus(
 	Id int identity(1,1)
 	,Estatus varchar(max)
+	,EsActivo bit
+	,RegistroGenerado_TimeStamp datetime
+	,RegistroGenerado_UsuarioId nvarchar(128)
+)
+
+create table ControlPacientes_InformacionGeneral_Rubro(
+	Id int identity(1,1)
+	,Rubro varchar(max)
 	,EsActivo bit
 	,RegistroGenerado_TimeStamp datetime
 	,RegistroGenerado_UsuarioId nvarchar(128)
