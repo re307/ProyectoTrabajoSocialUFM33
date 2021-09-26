@@ -4,7 +4,7 @@ create table ControlPacientes_InformacionGeneral(
 	,ControlPacientes_InformacionGeneral_Pacientes_Id int
 	--,ControlPacientes_InformacionGeneral_Consultorio_Id int
 	,ControlPacientes_InformacionGeneral_Estatus_Id int
-	,ControlPacientes_Seguimiento_TrabajadoraSocial_Id int
+	,TrabajadoraSocial_UsuarioId nvarchar(128)
 	,RegistroGenerado_TimeStamp datetime
 	,RegistroGenerado_UsuarioId nvarchar(128)
 )
